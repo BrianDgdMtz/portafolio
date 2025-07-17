@@ -132,10 +132,6 @@ html{
     background-color: #1877f2;
 }
 
-.inicio .contenido-banner .redes .twitter:hover{
-    background-color: #1da1f2;
-}
-
 .inicio .contenido-banner .redes .instagram:hover{
     background-color: #fcaf45;
 }
@@ -361,31 +357,13 @@ a.boton-descarga{
 
 /* Estas clases se agregaran dinamicamente mediante Javascript */
 
-.skills .skill .html{
+.skills .skill .nodejs{
     width: 0%;
-    animation: 2s html forwards;
+    animation: 2s nodejs forwards;
 }
-@keyframes html{
+@keyframes nodejs{
     0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .css{
-    width: 0%;
-    animation: 2s css forwards;
-}
-@keyframes css{
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript{
-    0%{width: 0%;}
-    100%{width: 50%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .react{
@@ -394,25 +372,25 @@ a.boton-descarga{
 }
 @keyframes react{
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 60%;}
 }
 
-.skills .skill .csharp{
+.skills .skill .javascript{
     width: 0%;
-    animation: 2s csharp forwards;
+    animation: 2s javascript forwards;
 }
-@keyframes csharp{
+@keyframes javascript{
     0%{width: 0%;}
-    100%{width: 50%;}
+    100%{width: 80%;}
 }
 
-.skills .skill .sqlserver{
+.skills .skill .bootstrap{
     width: 0%;
-    animation: 2s sqlserver forwards;
+    animation: 2s bootstrap forwards;
 }
-@keyframes sqlserver{
+@keyframes bootstrap{
     0%{width: 0%;}
-    100%{width: 50%;}
+    100%{width: 65%;}
 }
 
 .skills .skill .git{
@@ -422,6 +400,24 @@ a.boton-descarga{
 @keyframes git{
     0%{width: 0%;}
     100%{width: 50%;}
+}
+
+.skills .skill .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+}
+@keyframes sql{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .powerbi{
+    width: 0%;
+    animation: 2s powerbi forwards;
+}
+@keyframes powerbi{
+    0%{width: 0%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .comunicacion{
@@ -759,10 +755,6 @@ footer .arriba{
 
 footer .redes .facebook:hover{
     background-color: #1877f2;
-}
-
-footer .redes .twitter:hover{
-    background-color: #1da1f2;
 }
 
 footer .redes .instagram:hover{

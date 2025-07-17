@@ -4,13 +4,13 @@ function efectoHabilidades(){
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
     if(distancia_skills >= 300){
         let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("html");
-        habilidades[1].classList.add("css");
+        habilidades[0].classList.add("nodejs");
+        habilidades[1].classList.add("react");
         habilidades[2].classList.add("javascript");
-        habilidades[3].classList.add("react");
-        habilidades[4].classList.add("csharp");
-        habilidades[5].classList.add("sqlserver");
-        habilidades[6].classList.add("git");
+        habilidades[3].classList.add("bootstrap");
+        habilidades[4].classList.add("git");
+        habilidades[5].classList.add("sql");
+        habilidades[6].classList.add("powerbi");
         habilidades[7].classList.add("comunicacion");
         habilidades[8].classList.add("trabajoenequipo");
         habilidades[9].classList.add("creatividad");
