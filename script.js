@@ -6,8 +6,8 @@ function efectoHabilidades(){
         let habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("nodejs");
         habilidades[1].classList.add("react");
-        habilidades[2].classList.add("javascript");
-        habilidades[3].classList.add("bootstrap");
+        habilidades[2].classList.add("typescriptjavascript");
+        habilidades[3].classList.add("materialui");
         habilidades[4].classList.add("git");
         habilidades[5].classList.add("sql");
         habilidades[6].classList.add("powerbi");

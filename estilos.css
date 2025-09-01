@@ -372,25 +372,25 @@ a.boton-descarga{
 }
 @keyframes react{
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 80%;}
 }
 
-.skills .skill .javascript{
+.skills .skill .typescriptjavascript{
     width: 0%;
-    animation: 2s javascript forwards;
+    animation: 2s typescriptjavascript forwards;
 }
-@keyframes javascript{
+@keyframes typescriptjavascript{
     0%{width: 0%;}
     100%{width: 80%;}
 }
 
-.skills .skill .bootstrap{
+.skills .skill .materialui{
     width: 0%;
-    animation: 2s bootstrap forwards;
+    animation: 2s materialui forwards;
 }
-@keyframes bootstrap{
+@keyframes materialui{
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .git{
@@ -399,7 +399,7 @@ a.boton-descarga{
 }
 @keyframes git{
     0%{width: 0%;}
-    100%{width: 50%;}
+    100%{width: 55%;}
 }
 
 .skills .skill .sql{
