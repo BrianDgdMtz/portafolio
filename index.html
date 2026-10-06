@@ -1,432 +1,339 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Brian Martinez | Web Developer</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Bienvenidos</a>
-            </div>
-            <nav id="nav" class="nav">
-                <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">HABILIDADES</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTAFOLIO</a></li>
+    <!-- HEADER & NAV -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">BM.</a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#sobremi" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                    <li><a href="#portfolio" class="nav-link">Proyectos</a></li>
                 </ul>
             </nav>
-        </header>
-    </div>
-
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/foto perfil portfolio.jpeg" alt="">
+            <div class="nav-controls">
+                <!-- Theme Toggle Switch -->
+                <label class="theme-switch" for="checkbox" title="Cambiar Tema">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <i class="fa-solid fa-moon moon-icon"></i>
+                        <i class="fa-solid fa-sun sun-icon"></i>
+                    </div>
+                </label>
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-            <h1>Brian Martinez</h1>
-            <h2>Web Developer - Data Analyst</h2>
-            <div class="redes">
-                <a href="https://www.facebook.com/BrianDgdMtz" target="_blank" class="facebook" title="Sigueme en Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/brian_gdm/" target="_blank" class="instagram" title="Sigueme en Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/BrianDgdMtz" target="_blank" class="github" title="Visita mi GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/briandgdmtz/" target="_blank" class="linkedin" title="Visita mi linkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero section">
+        <div class="hero-content">
+            <div class="hero-text reveal">
+                <h2 class="greeting">Hola, soy</h2>
+                <h1 class="name">Brian Martinez</h1>
+                <h3 class="role">Full-Stack Dev <span class="highlight">&</span> Data Engineer</h3>
+                <p class="description">Especializado en automatización de procesos empresariales, arquitectura de datos
+                    y desarrollo web de alto rendimiento. Apasionado por optimizar negocios mediante tecnología.</p>
+
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Ver mis Proyectos</a>
+                    <a href="archivos/CV Brian Martinez.pdf" download class="btn btn-secondary">Descargar CV <i
+                            class="fa-solid fa-download"></i></a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/BrianDgdMtz" target="_blank" title="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/briandgdmtz/" target="_blank" title="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/brian_gdm/" target="_blank" title="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/BrianDgdMtz" target="_blank" title="Facebook"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="hero-image reveal-right">
+                <div class="img-container glass-panel">
+                    <img src="img/foto perfil.jpeg" alt="Brian Martinez">
+                    <div class="badge badge-1"><i class="fa-brands fa-react"></i> React</div>
+                    <div class="badge badge-2"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                    <div class="badge badge-3"><i class="fa-brands fa-php"></i> PHP</div>
+                    <div class="badge badge-4"><i class="fa-solid fa-database"></i> SQL / ETL</div>
+                    <div class="badge badge-5"><i class="fa-solid fa-chart-line"></i> Analytics</div>
+                    <div class="badge badge-6"><i class="fa-solid fa-chart-simple"></i> Power BI</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-                <h2>Sobre Mi</h2>
-                <p><span>Hola, soy Brian Martinez. </span>
-                    Soy desarrollador full-stack con enfoque en automatización de procesos empresariales, análisis de datos y desarrollo web. Tengo experiencia integral en la creación de soluciones tecnológicas mediante tecnologías como React, Node.js y Power BI. Soy especialista en visualización de información y optimización de flujos en entornos corporativos. Destaco por mi pensamiento estructurado, precisión técnica, diseño funcional y orientación a resultados.</p>
-                <div class="fila">
-                    <!-- Datos personales -->
-                <div class="col">
-                    <h3>Datos personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            05-12-1998
-                        </li>
-                        <li>
-                            <strong>Telefono</strong>
-                            284-109-0524
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            brian.mtz98@outlook.com
-                        </li>
-                        <li>
-                            <strong>Website</strong>
-                            briandgdmtz.github.io/portafolio/
-                        </li>
-                        <li>
-                            <strong>Direccion</strong>
-                            Nuevo Leon, Mexico.
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>Full-stack Developer</span>
-                        </li>
-                    </ul>
+    <!-- SOBRE MÍ & HABILIDADES -->
+    <section id="sobremi" class="about section">
+        <div class="container">
+            <h2 class="section-title reveal">Sobre Mí & Habilidades</h2>
+            <div class="about-grid">
+                <div class="about-text glass-panel reveal">
+                    <h3>Más allá del código</h3>
+                    <p>Soy un Desarrollador Full-Stack & Data Engineer con experiencia integral en el diseño de
+                        plataformas transaccionales complejas, pipelines ETL y motores de cálculo analítico/financiero.
+                    </p>
+                    <p>Me destaco por mi precisión técnica y orientación a resultados. Manejo entornos de alto
+                        rendimiento utilizando tecnologías modernas como React, TypeScript, PHP y Node.js en el
+                        Front-End y Back-End, así como SQL y Power BI para el análisis y modelado de datos a gran
+                        escala.</p>
                 </div>
-                
-                <!-- Intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>VIDEOJUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-microchip"></i>
-                            <span>TECNOLOGIA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-running"></i>
-                            <span>RUNNING</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-futbol"></i>
-                            <span>FUTBOL</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-film"></i>
-                            <span>PELICULAS</span>
-                        </div>
+                <div class="skills-grid reveal-right">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-react"></i>
+                        <span>React & TS</span>
                     </div>
-                </div>
-            </div>
-            <div class="descarga">
-                <a href="archivos/CV Brian Martinez.pdf" download class="boton-descarga">
-                    <button>
-                        Descargar CV <i class="fa-solid fa-download"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Habilidades</h2>
-            <div class="fila">
-                <!-- Skills Tecnicos -->
-                <div class="col">
-                    <h3>Habilidades Tecnicas</h3>
-                    <div class="skill">
-                        <span>Node.Js</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-node-js"></i>
+                        <span>Node.js</span>
                     </div>
-                    <div class="skill">
-                        <span>ReactJS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-php"></i>
+                        <span>PHP (MVC/API)</span>
                     </div>
-                    <div class="skill">
-                        <span>JavaScript(ES6+) y TypeScript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-database"></i>
+                        <span>SQL & ETL</span>
                     </div>
-                    <div class="skill">
-                        <span>Material UI</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>Power BI</span>
                     </div>
-                    <div class="skill">
-                        <span>Git</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>Automatización</span>
                     </div>
-                    <div class="skill">
-                        <span>SQL</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-figma"></i>
+                        <span>UX / UI</span>
                     </div>
-                    <div class="skill">
-                        <span>Microsoft Power BI</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <span>Git & GitHub</span>
                     </div>
-                </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Habilidades Profesionales</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Didactismo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Pensamiento analitico</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Manejo de conflictos</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span></span>
-                            </div>
-                        </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <span>APIs REST</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Formacion Academica</h3>
-                    <div class="item izq">
-                        <h4>Ingenieria en Sistemas Computacionales</h4>
-                        <span class="casa">Instituto Tecnologico Superior de Alvarado</span>
-                        <span class="fecha">Ago 2017 - Dic 2021</span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Tecnico en Programacion</h4>
-                        <span class="casa">CBTis #77</span>
-                        <span class="fecha">Ago 2014 - Jul 2017</span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
+    <!-- EXPERIENCIA / CURRICULUM -->
+    <section id="experiencia" class="experience section">
+        <div class="container">
+            <h2 class="section-title reveal">Mi Experiencia</h2>
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="date">Oct 2025 - Presente</span>
+                        <h3>Desarrollador Full-Stack & Data Analytics Engineer</h3>
+                        <h4>Skingroup</h4>
+                        <p>Diseño y desarrollo de Plataforma de Supply Chain y pipelines ETL multicapa en PHP/MySQL.
+                            Creación de motores financieros para atribución de comisiones médicas y despliegue de APIs
+                            REST analíticas de alto rendimiento, optimizando payloads en más de un 40%.</p>
                     </div>
                 </div>
 
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Analista de Tecnologías.</h4>
-                        <span class="casa">MR Seguridad</span>
-                        <span class="fecha">Feb 2024 - Jul 2025</span>
-                        <p>En MR Seguridad fui encargado del diseño e implementación de soluciones de automatización empresarial, enfocadas en optimizar procesos contables, operativos y comerciales mediante el uso de tecnologías como Node.js. Asimismo, desarrollé dashboards en Power BI, integrando diversas fuentes de datos con el objetivo de facilitar la visualización dinámica de indicadores clave de rendimiento (KPIs) estratégicos. <br> Dentro de mis responsabilidades también se encontraba la migración de reportes manuales elaborados en Excel a entornos automatizados en la nube, lo cual permitió reducir significativamente los tiempos de análisis de datos. Además, realicé tareas de extracción y procesamiento de información proveniente de archivos XML, sitios web y bases de datos SQL, consolidando los datos para su posterior análisis. <br> Durante mi estancia, colaboré de forma directa con distintas áreas como contabilidad, ventas y marketing, brindando soluciones técnicas que respondían a necesidades específicas de inteligencia operativa y requerimientos internos.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Desarrollador de Software Jr.</h4>
-                        <span class="casa">Ultrasist S.A. de C.V.</span>
-                        <span class="fecha">Feb 2022 - Dic 2023</span>
-                        <p>En Ultrasist estuve en el área de desarrollo y consultoría de sistemas, en la que debía de resolver diversos problemas mediante tickets en conjunto con funcionarios de diversas dependencias del gobierno como SADER, SAGARPA, COFEPRIS, Secretaría de Economía, Agencia Aduanal, entre otras, en la cual debía de resolver por medio de consultas de la base de datos de producción los errores, inconsistencias de datos entre otras problemáticas que se presentaban en dichas dependencias.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Practicante.</h4>
-                        <span class="casa">Instituto Tecnologico Superior de Alvarado</span>
-                        <span class="fecha">Ago 2021 - Dic 2021</span>
-                        <p>Como residente me desempeñe en un proyecto de una app móvil llamado Museo de Realidad Aumentada, en el que desarrolle diversos modelos 3D realizados con Blender en conjunto con Unity y Vuforia, mismos que se le añadieron algunos assets como por ejemplo que el modelo 3D se mostrara únicamente con su codigo QR y a su vez se reproducía un audio dando información y características del modelo mostrado en la app movil.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="date">Feb 2024 - Jul 2025</span>
+                        <h3>Analista de Tecnologías</h3>
+                        <h4>MR Seguridad</h4>
+                        <p>Diseño e implementación de automatización empresarial para procesos contables y operativos
+                            mediante Node.js. Desarrollo de dashboards dinámicos en Power BI integrando múltiples
+                            fuentes y migración de reportes a entornos automatizados en la nube.</p>
                     </div>
                 </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="date">Feb 2022 - Dic 2023</span>
+                        <h3>Desarrollador de Software Jr.</h3>
+                        <h4>Ultrasist S.A. de C.V.</h4>
+                        <p>Soporte y mantenimiento de sistemas para dependencias gubernamentales (SADER, SAGARPA,
+                            COFEPRIS). Análisis y resolución de bugs críticos mediante consultas SQL en ambientes
+                            productivos para la corrección de incidencias.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="date">Ago 2021 - Dic 2021</span>
+                        <h3>Residente Profesional</h3>
+                        <h4>Instituto Tecnológico Superior de Alvarado</h4>
+                        <p>Desarrollo de prototipo móvil de realidad aumentada para museo educativo. Modelado 3D en
+                            Blender e integración con Unity y Vuforia para reconocimiento interactivo mediante códigos
+                            QR.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- SECCION PORTAFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTAFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/trabajos/tienda-videojuegos.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Tienda de Videojuegos</h3>
-                        <p>(Solo version Desktop)</p>
-                        <p>HTML - Css - JavaScript</p>
-                        <div>
-                            <a href="https://briandgdmtz.github.io/tienda-videojuegos/" target="_blank" class="boton-proyecto">Ver más</a>
+    <!-- PORTAFOLIO -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <h2 class="section-title reveal">Proyectos Destacados</h2>
+            <div class="projects-grid">
+
+                <div class="project-card glass-panel reveal">
+                    <div class="project-img">
+                        <img src="img/trabajos/synapse-crm.jpg" alt="Synapse CRM">
+                        <div class="project-overlay">
+                            <a href="https://synapsecrm.vercel.app/" target="_blank" class="btn btn-primary"><i
+                                    class="fa-solid fa-link"></i> Visitar</a>
                         </div>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/trabajos/synapse-crm.jpg" alt="">
-                    <div class="overlay">
+                    <div class="project-info">
                         <h3>Synapse CRM</h3>
-                        <p>React - TypeScript - Material UI</p>
-                        <div>
-                            <a href="https://synapsecrm.vercel.app/" target="_blank" class="boton-proyecto">Ver más</a>
+                        <p>Sistema CRM moderno y escalable desarrollado con tecnologías web actuales.</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Material UI</span>
                         </div>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <img src="img/trabajos/cafe-restaurant.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Cafe Restaurant</h3>
-                        <p>HTML - Css - Jquery</p>
-                        <div>
-                            <a href="https://briandgdmtz.github.io/cafe-colonial/" target="_blank" class="boton-proyecto">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/trabajos/calculadora.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Calculadora</h3>
-                        <p>HTML - Css - JavaScript</p>
-                        <div>
-                            <a href="https://briandgdmtz.github.io/calculadora/" target="_blank" class="boton-proyecto">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/trabajos/zapateria.png" alt="">
-                    <div class="overlay">
-                        <h3>Punto de Venta Zapateria</h3>
-                        <p>C# - SQL Server</p>
-                        <div>
-                            <a href="https://github.com/BrianDgdMtz/SistemaVenta_Zapateria" target="_blank" class="boton-proyecto">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/trabajos/flip-cards god of war.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Flip-Cards God of War</h3>
-                        <p>(Solo version Desktop)</p>
-                        <p>HTML - Css</p>
-                        <div>
-                            <a href="https://briandgdmtz.github.io/flip-cards-God-of-War/" target="_blank" class="boton-proyecto">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </dic>
-    </section>
 
-    <!-- SECCION CONTACTO -->
-    <!-- 
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                
-                <div class="col">
-                    <input type="text" placeholder="Tu Nombre">
-                    <input type="text" placeholder="Numero telefonico">
-                    <input type="text" placeholder="Direccion de correo">
-                    <input type="text" placeholder="Asunto">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                <div class="project-card glass-panel reveal">
+                    <div class="project-img">
+                        <img src="img/trabajos/tienda-videojuegos.jpg" alt="Tienda de Videojuegos">
+                        <div class="project-overlay">
+                            <a href="https://briandgdmtz.github.io/tienda-videojuegos/" target="_blank"
+                                class="btn btn-primary"><i class="fa-solid fa-link"></i> Visitar</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tienda de Videojuegos</h3>
+                        <p>Plataforma de catálogo (Desktop) con interfaces dinámicas e interactivas.</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="project-card glass-panel reveal">
+                    <div class="project-img">
+                        <img src="img/trabajos/zapateria.png" alt="Punto de Venta Zapatería">
+                        <div class="project-overlay">
+                            <a href="https://github.com/BrianDgdMtz/SistemaVenta_Zapateria" target="_blank"
+                                class="btn btn-primary"><i class="fa-brands fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Punto de Venta Zapatería</h3>
+                        <p>Sistema de gestión y ventas con integración a bases de datos relacionales.</p>
+                        <div class="tech-tags">
+                            <span>C#</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel reveal">
+                    <div class="project-img">
+                        <img src="img/trabajos/cafe-restaurant.jpg" alt="Cafe Restaurant">
+                        <div class="project-overlay">
+                            <a href="https://briandgdmtz.github.io/cafe-colonial/" target="_blank"
+                                class="btn btn-primary"><i class="fa-solid fa-link"></i> Visitar</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cafe Colonial</h3>
+                        <p>Landing page atractiva y responsive para restaurante y cafetería.</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel reveal">
+                    <div class="project-img">
+                        <img src="img/trabajos/calculadora.jpg" alt="Calculadora">
+                        <div class="project-overlay">
+                            <a href="https://briandgdmtz.github.io/calculadora/" target="_blank"
+                                class="btn btn-primary"><i class="fa-solid fa-link"></i> Visitar</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Calculadora Web</h3>
+                        <p>Aplicación funcional interactiva con lógica de programación en frontend.</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel reveal">
+                    <div class="project-img">
+                        <img src="img/trabajos/flip-cards god of war.jpg" alt="Flip-Cards God of War">
+                        <div class="project-overlay">
+                            <a href="https://briandgdmtz.github.io/flip-cards-God-of-War/" target="_blank"
+                                class="btn btn-primary"><i class="fa-solid fa-link"></i> Visitar</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Flip-Cards God of War</h3>
+                        <p>Animaciones CSS 3D interactivas aplicadas a tarjetas coleccionables (Desktop).</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-    -->
 
-    <!-- SECCION FOOTER -->
-    <footer>
-        <a href="#inicio" class="arriba" title="Ir arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="https://www.facebook.com/BrianDgdMtz" target="_blank" class="facebook" title="Sigueme en Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/brian_gdm/" target="_blank" class="instagram" title="Sigueme en Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://github.com/BrianDgdMtz" target="_blank" class="github" title="Visita mi GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/briandgdmtz/" target="_blank" class="linkedin" title="Visita mi linkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">BM.</div>
+            <p>&copy; 2026 Brian Martinez. Todos los derechos reservados.</p>
+            <a href="#inicio" class="back-to-top" title="Volver arriba">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
         </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
+
 </html>
